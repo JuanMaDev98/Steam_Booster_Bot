@@ -7,6 +7,7 @@ TOKEN = os.environ['token']
 USERNAME, PASSWORD, GAME = 0, 1, 2
 GUARD, MAIL = 0, 1
 client = SteamClient()
+print("?")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f"Hello,\nThis bot increases the hours played of games on Steam\\.\nType *_/help_* to learn how to use it\\.\n\n[_Source Code_](https://github.com/tingirifistik/Steam-HourBooster)\n[_Twitter_](https://twitter.com/_tingirifistik)", parse_mode='MarkdownV2')
