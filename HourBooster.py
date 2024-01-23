@@ -1,9 +1,9 @@
 from steam.client import SteamClient, EResult
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters, CallbackContext, ConversationHandler
-from os import getenv
+import os
 
-TOKEN = getenv("token")
+TOKEN = os.environ['token']
 USERNAME, PASSWORD, GAME = 0, 1, 2
 GUARD, MAIL = 0, 1
 client = SteamClient()
